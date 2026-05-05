@@ -6,7 +6,7 @@ const fs=require("fs");
     const requestHandler=(req,res)=>{
      const url=req.url;
     const method=req.method;
-    let msg="dscds"
+    let msg="Hixdddmedh"
 
 if(url=="/home"){
     res.setHeader('content-Type',"text/html");
