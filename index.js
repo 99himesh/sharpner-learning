@@ -3,6 +3,8 @@
 // }
 // console.log(arrowfn(3,4));
 
+const { log } = require("console");
+
 
 
 // const person={
@@ -262,6 +264,38 @@
 //  const res=collectArgs(1,2,3,4,5,5);
 //  console.log(res);
  
+// const describe=(name,age=25,...hobbies)=>{
+//     console.log(hobbies.map((item)=>item));
+    
+//     return `${name} is ${age} ${hobbies.map((item)=>item)} .`
+// }
+
+// const res=describe("himesh",28,"Atcing", "art","music");
+// console.log(res);
+
+
+// const tajMahal = {
+//   name: 'Taj Mahal',
+//   location: 'Agra',
+//   built: 1648,
+//   architecturalStyle: 'Mughal',
+//   dimensions: {
+//     area: '17 acres',
+//   },
+//   UNESCOWorldHeritage: true,
+// };
+
+// // Destructuring and renaming variables
+// //Write your code here
+// tajMahal.yearBuilt = tajMahal.built;
+// tajMahal.dimensions={totalArea:tajMahal.dimensions.area}
+// const { name, location, yearBuilt, architecturalStyle, dimensions, UNESCOWorldHeritage } = tajMahal;
+
+
+// console.log(name, location, yearBuilt, architecturalStyle, dimensions, UNESCOWorldHeritage);
+
+
+
 
 
 

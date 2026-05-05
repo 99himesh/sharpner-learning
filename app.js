@@ -1,18 +1,27 @@
-const http=require("http");
-const  routes = require("./route");
 
-const server=http.createServer(routes)
+const express=require("express");
+const app=express();
 
-server.listen(3000)
+app.use((req,res,next)=>{
+    console.log("first middleware");
+    next();
+});
+app.use((req,res,next)=>{
+    console.log("second middleware");
+    res.send("Hello World");
+});
 
 
 
 
-// const describe=(name,age=25,...hobbies)=>{
-//     console.log(hobbies.map((item)=>item));
+
+app.listen(3000,()=>{
+    console.log("Server is up and running on port 3000! Ready to handle requests.");
     
-//     return `${name} is ${age} ${hobbies.map((item)=>item)} .`
-// }
+});
 
-// const res=describe("himesh",28,"Atcing", "art","music");
-// console.log(res);
+
+
+
+
+
