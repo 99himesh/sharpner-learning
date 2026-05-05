@@ -15,13 +15,13 @@ if(url=="/home"){
     res.write('<head><title>Welcome home</title></head>')
     res.write('<body> <p>'+msg+'</p><form action="/message" method="POST"><input name="message" type="text"/><button type="Submit">Submit</button></form></body>')
     res.write('<html>')
-    res.end();
+    res.end(); 
     }else if(url=="/about"){
     res.setHeader('content-Type',"text/html");
 
     res.write('<html>')
     res.write('<head><title>Welcome to About Us page</title></head>')
-    res.write('<body>Welcome to About Us page </body>')
+    res.write('<body>Welcome to About Us pae </body>')
     res.write('<html>')
     res.end();
     }else if(url=="/node"){
