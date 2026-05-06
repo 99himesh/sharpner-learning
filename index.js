@@ -3,7 +3,6 @@
 // }
 // console.log(arrowfn(3,4));
 
-const { log } = require("console");
 
 
 
